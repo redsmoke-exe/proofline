@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools==80.10.2", "wheel==0.46.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ats-cv-agent"
+version = "1.0.0"
+description = "Grounded, ATS-optimized resume and cover-letter agent with deterministic PDF rendering"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.116.1",
+  "Jinja2==3.1.6",
+  "openai==3.13.0",
+  "pydantic==2.13.5",
+  "pypdf==6.10.0",
+  "python-docx==1.2.0",
+  "python-dotenv==1.1.1",
+  "python-multipart==0.0.20",
+  "reportlab==4.4.9",
+  "uvicorn==0.35.0",
+  "WeasyPrint==70.0",
+]
+
+[project.optional-dependencies]
+dev = ["httpx==0.28.1", "pytest==9.1.1"]
+
+[project.scripts]
+cv-agent = "cv_agent.main:main"
+cv-agent-api = "cv_agent.api:run"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cv_agent = ["templates/*.html", "templates/*.css"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]

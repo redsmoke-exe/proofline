@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="{{ template_version }}">
+  <title>{{ letter.candidate.full_name }} - Cover Letter</title>
+  <style>{{ css | safe }}</style>
+</head>
+<body class="cover-document page-{{ page_size | lower }}">
+  <header class="letter-header">
+    <h1>{{ letter.candidate.full_name }}</h1>
+    <p class="contact-line">
+      {% if letter.candidate.location %}<span class="contact-item">{{ letter.candidate.location }}</span>{% endif %}
+      {% if letter.candidate.phone %}<span class="contact-item">{{ letter.candidate.phone }}</span>{% endif %}
+      {% if letter.candidate.email %}<span class="contact-item"><a href="mailto:{{ letter.candidate.email }}">{{ letter.candidate.email }}</a></span>{% endif %}
+      {% for link in letter.candidate.links %}<span class="contact-item"><a href="{{ link.url }}">{{ link.label }}</a></span>{% endfor %}
+    </p>
+  </header>
+
+  <main>
+    <p class="letter-date">{{ letter.letter_date }}</p>
+    <p class="letter-recipient">Hiring Team<br>{{ letter.recipient_company }}</p>
+    <p class="letter-salutation">{{ letter.salutation }}</p>
+    <div class="letter-body">
+      {% for paragraph in letter.paragraphs %}<p>{{ paragraph.text }}</p>{% endfor %}
+    </div>
+    <div class="letter-signature">
+      <p class="letter-closing">{{ letter.closing }}</p>
+      <p>{{ letter.signatory }}</p>
+    </div>
+  </main>
+</body>
+</html>

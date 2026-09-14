@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: proofline-cv-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: LOG_LEVEL
+        value: INFO
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_PARALLEL_PROVIDERS
+        value: "true"
+      - key: GEMINI_MODEL
+        value: gemini-3-flash-preview
+      - key: GEMINI_FALLBACK_MODELS
+        value: gemini-3.7-flash,gemini-3.6-flash
+      - key: GEMINI_TIMEOUT_SECONDS
+        value: "45"
+      - key: OPENROUTER_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: OPENROUTER_MODEL
+        value: nvidia/nemotron-3.5-lightning:free
+      - key: OPENROUTER_FALLBACK_MODELS
+        value: openrouter/free
+      - key: OPENROUTER_APP_NAME
+        value: Proofline CV Agent
+      - key: OPENROUTER_REASONING_EFFORT
+        value: none
+      - key: OPENROUTER_REASONING_EXCLUDE
+        value: "true"
+      - key: OPENROUTER_TIMEOUT_SECONDS
+        value: "45"
+      - key: OPENROUTER_MAX_API_ATTEMPTS
+        value: "2"
+      - key: ENABLE_EXTERNAL_GROUNDEDNESS_AUDIT
+        value: "false"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: PROXY_AUTH_SECRET
+        sync: false

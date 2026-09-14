@@ -1,0 +1,327 @@
+{
+  "master_profile": {
+    "contact": {
+      "full_name": "Alex Morgan",
+      "email": "alex.morgan@example.com",
+      "phone": "+1 512 555 0147",
+      "location": "Austin, TX",
+      "links": ["https://linkedin.com/in/alexmorgan-data"]
+    },
+    "contact_evidence_ids": ["e_name", "e_contact"],
+    "evidence_catalog": [
+      {
+        "evidence_id": "e_name",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "# Alex Morgan"
+      },
+      {
+        "evidence_id": "e_contact",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Austin, TX | alex.morgan@example.com | +1 512 555 0147 | https://linkedin.com/in/alexmorgan-data"
+      },
+      {
+        "evidence_id": "e_role1",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Senior Data Platform Engineer | Northstar Analytics | Austin, TX | January 2022 - Present"
+      },
+      {
+        "evidence_id": "e_a1",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration."
+      },
+      {
+        "evidence_id": "e_a2",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Increased deployment frequency from weekly to daily by implementing CI/CD with GitHub Actions and Terraform."
+      },
+      {
+        "evidence_id": "e_a3",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Maintained 99.95% platform availability by adding AWS observability dashboards and automated incident alerts."
+      },
+      {
+        "evidence_id": "e_skills",
+        "document_id": "doc_5c477fd3c8c802d6",
+        "quote": "Python, SQL, Apache Spark, AWS, Airflow, Terraform, GitHub Actions, CI/CD, data quality, observability, Agile"
+      },
+      {
+        "evidence_id": "e_role2",
+        "document_id": "doc_4e797447e542e8c4",
+        "quote": "Data Engineer | Cedar Labs | Dallas, TX | June 2019 - December 2021"
+      },
+      {
+        "evidence_id": "e_a4",
+        "document_id": "doc_4e797447e542e8c4",
+        "quote": "Improved data quality pass rates from 91% to 98% by implementing SQL validation rules and ownership checks."
+      },
+      {
+        "evidence_id": "e_a5",
+        "document_id": "doc_4e797447e542e8c4",
+        "quote": "Cut monthly AWS processing cost by 27% by tuning Python batch jobs and storage lifecycle policies."
+      },
+      {
+        "evidence_id": "e_education",
+        "document_id": "doc_4e797447e542e8c4",
+        "quote": "Bachelor of Science in Computer Science | University of Texas at Dallas | May 2019 | Richardson, TX"
+      }
+    ],
+    "summary_facts": [
+      {
+        "fact_id": "f_summary",
+        "statement": "Data platform engineer using Python, SQL, Apache Spark, AWS, Airflow, Terraform, CI/CD, data quality, and observability, with 42% lower pipeline latency and 99.95% platform availability.",
+        "evidence_ids": ["e_a1", "e_a3", "e_skills"]
+      }
+    ],
+    "experience": [
+      {
+        "profile_experience_id": "xp_northstar",
+        "company": "Northstar Analytics",
+        "title": "Senior Data Platform Engineer",
+        "location": "Austin, TX",
+        "start_date": "January 2022",
+        "end_date": "Present",
+        "evidence_ids": ["e_role1"],
+        "achievements": [
+          {
+            "achievement_id": "a1",
+            "statement": "Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration.",
+            "evidence_ids": ["e_a1"]
+          },
+          {
+            "achievement_id": "a2",
+            "statement": "Increased deployment frequency from weekly to daily by implementing CI/CD with GitHub Actions and Terraform.",
+            "evidence_ids": ["e_a2"]
+          },
+          {
+            "achievement_id": "a3",
+            "statement": "Maintained 99.95% platform availability by adding AWS observability dashboards and automated incident alerts.",
+            "evidence_ids": ["e_a3"]
+          }
+        ]
+      },
+      {
+        "profile_experience_id": "xp_cedar",
+        "company": "Cedar Labs",
+        "title": "Data Engineer",
+        "location": "Dallas, TX",
+        "start_date": "June 2019",
+        "end_date": "December 2021",
+        "evidence_ids": ["e_role2"],
+        "achievements": [
+          {
+            "achievement_id": "a4",
+            "statement": "Improved data quality pass rates from 91% to 98% by implementing SQL validation rules and ownership checks.",
+            "evidence_ids": ["e_a4"]
+          },
+          {
+            "achievement_id": "a5",
+            "statement": "Cut monthly AWS processing cost by 27% by tuning Python batch jobs and storage lifecycle policies.",
+            "evidence_ids": ["e_a5"]
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {"name": "Python", "category": "Programming", "evidence_ids": ["e_skills"]},
+      {"name": "SQL", "category": "Programming", "evidence_ids": ["e_skills"]},
+      {"name": "Apache Spark", "category": "Data", "evidence_ids": ["e_skills"]},
+      {"name": "AWS", "category": "Cloud", "evidence_ids": ["e_skills"]},
+      {"name": "Airflow", "category": "Data", "evidence_ids": ["e_skills"]},
+      {"name": "Terraform", "category": "Infrastructure", "evidence_ids": ["e_skills"]},
+      {"name": "GitHub Actions", "category": "Delivery", "evidence_ids": ["e_skills"]},
+      {"name": "CI/CD", "category": "Delivery", "evidence_ids": ["e_skills"]},
+      {"name": "data quality", "category": "Data", "evidence_ids": ["e_skills"]},
+      {"name": "observability", "category": "Operations", "evidence_ids": ["e_skills"]},
+      {"name": "Agile", "category": "Methodology", "evidence_ids": ["e_skills"]}
+    ],
+    "education": [
+      {
+        "profile_education_id": "edu_utd",
+        "institution": "University of Texas at Dallas",
+        "degree": "Bachelor of Science",
+        "field_of_study": "Computer Science",
+        "graduation_date": "May 2019",
+        "location": "Richardson, TX",
+        "evidence_ids": ["e_education"]
+      }
+    ],
+    "projects": [],
+    "certifications": []
+  },
+  "job_requirements": {
+    "source_document_id": "doc_d5a95d14ade22b85",
+    "target_title": "Data Platform Engineer",
+    "company_name": "Acme Cloud",
+    "competencies": ["reliable operations", "partnering"],
+    "hard_skills": ["Python", "SQL", "Apache Spark"],
+    "tools": ["AWS", "Airflow", "Terraform"],
+    "methodologies": ["CI/CD", "Agile"],
+    "responsibilities": ["build reliable distributed data systems", "improve data quality and observability"],
+    "pain_points": ["scalable pipelines", "lower processing latency"],
+    "keywords": ["Data Platform Engineer", "distributed data systems", "data quality", "observability", "scalable pipelines"]
+  },
+  "document_package": {
+    "resume": {
+      "contact": {
+        "full_name": "Alex Morgan",
+        "email": "alex.morgan@example.com",
+        "phone": "+1 512 555 0147",
+        "location": "Austin, TX",
+        "links": ["https://linkedin.com/in/alexmorgan-data"]
+      },
+      "target_title": "Data Platform Engineer",
+      "professional_summary": {
+        "text": "Data platform engineer using Python, SQL, Apache Spark, AWS, Airflow, Terraform, CI/CD, data quality, and observability, with 42% lower pipeline latency and 99.95% platform availability.",
+        "achievement_ids": ["f_summary"]
+      },
+      "skills": ["Python", "SQL", "Apache Spark", "AWS", "Airflow", "Terraform", "GitHub Actions", "CI/CD", "data quality", "observability", "Agile"],
+      "experience": [
+        {
+          "profile_experience_id": "xp_northstar",
+          "company": "Northstar Analytics",
+          "title": "Senior Data Platform Engineer",
+          "location": "Austin, TX",
+          "start_date": "January 2022",
+          "end_date": "Present",
+          "bullets": [
+            {
+              "text": "Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration.",
+              "accomplishment": "Reduced data pipeline latency",
+              "measurement": "42%",
+              "method": "redesigning Apache Spark partitioning and Airflow orchestration",
+              "achievement_ids": ["a1"]
+            },
+            {
+              "text": "Increased deployment frequency from weekly to daily by implementing CI/CD with GitHub Actions and Terraform.",
+              "accomplishment": "Increased deployment frequency",
+              "measurement": "from weekly to daily",
+              "method": "implementing CI/CD with GitHub Actions and Terraform",
+              "achievement_ids": ["a2"]
+            },
+            {
+              "text": "Maintained 99.95% platform availability by adding AWS observability dashboards and automated incident alerts.",
+              "accomplishment": "Maintained platform availability",
+              "measurement": "99.95%",
+              "method": "adding AWS observability dashboards and automated incident alerts",
+              "achievement_ids": ["a3"]
+            }
+          ]
+        },
+        {
+          "profile_experience_id": "xp_cedar",
+          "company": "Cedar Labs",
+          "title": "Data Engineer",
+          "location": "Dallas, TX",
+          "start_date": "June 2019",
+          "end_date": "December 2021",
+          "bullets": [
+            {
+              "text": "Improved data quality pass rates from 91% to 98% by implementing SQL validation rules and ownership checks.",
+              "accomplishment": "Improved data quality pass rates",
+              "measurement": "from 91% to 98%",
+              "method": "implementing SQL validation rules and ownership checks",
+              "achievement_ids": ["a4"]
+            },
+            {
+              "text": "Cut monthly AWS processing cost by 27% by tuning Python batch jobs and storage lifecycle policies.",
+              "accomplishment": "Cut monthly AWS processing cost",
+              "measurement": "27%",
+              "method": "tuning Python batch jobs and storage lifecycle policies",
+              "achievement_ids": ["a5"]
+            }
+          ]
+        }
+      ],
+      "education": [
+        {
+          "profile_education_id": "edu_utd",
+          "institution": "University of Texas at Dallas",
+          "degree": "Bachelor of Science",
+          "field_of_study": "Computer Science",
+          "graduation_date": "May 2019",
+          "location": "Richardson, TX"
+        }
+      ],
+      "projects": [],
+      "certifications": []
+    },
+    "cover_letter": {
+      "candidate": {
+        "full_name": "Alex Morgan",
+        "email": "alex.morgan@example.com",
+        "phone": "+1 512 555 0147",
+        "location": "Austin, TX",
+        "links": ["https://linkedin.com/in/alexmorgan-data"]
+      },
+      "letter_date": "2026-09-12",
+      "recipient_company": "Acme Cloud",
+      "salutation": "Dear Hiring Team,",
+      "paragraphs": [
+        {
+          "text": "I am applying for the Data Platform Engineer role at Acme Cloud because its focus on reliable distributed data systems closely matches the work I want to continue doing: building scalable pipelines and dependable operations for data users.",
+          "candidate_claims": [],
+          "matched_requirements": ["build reliable distributed data systems", "scalable pipelines"]
+        },
+        {
+          "text": "Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration. That experience maps directly to your need for lower processing latency across a modern data platform.",
+          "candidate_claims": [
+            {
+              "text": "Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration.",
+              "achievement_ids": ["a1"]
+            }
+          ],
+          "matched_requirements": ["lower processing latency", "Apache Spark", "Airflow"]
+        },
+        {
+          "text": "Maintained 99.95% platform availability by adding AWS observability dashboards and automated incident alerts. I would bring the same operational discipline to Acme Cloud's data quality and observability goals.",
+          "candidate_claims": [
+            {
+              "text": "Maintained 99.95% platform availability by adding AWS observability dashboards and automated incident alerts.",
+              "achievement_ids": ["a3"]
+            }
+          ],
+          "matched_requirements": ["AWS", "observability", "reliable operations"]
+        },
+        {
+          "text": "I would welcome the opportunity to discuss how this combination of platform engineering and delivery automation can support Acme Cloud's team. Thank you for your consideration.",
+          "candidate_claims": [],
+          "matched_requirements": ["CI/CD automation", "partnering"]
+        }
+      ],
+      "closing": "Sincerely,",
+      "signatory": "Alex Morgan"
+    }
+  },
+  "groundedness_audit": {
+    "passed": true,
+    "findings": [
+      {"location": "resume.professional_summary", "supported": true, "explanation": "Supported by the cited profile summary fact.", "supporting_achievement_ids": ["f_summary"]},
+      {"location": "resume.experience[0].bullets[0]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a1"]},
+      {"location": "resume.experience[0].bullets[1]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a2"]},
+      {"location": "resume.experience[0].bullets[2]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a3"]},
+      {"location": "resume.experience[1].bullets[0]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a4"]},
+      {"location": "resume.experience[1].bullets[1]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a5"]},
+      {"location": "cover_letter.paragraphs[1].candidate_claims[0]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a1"]},
+      {"location": "cover_letter.paragraphs[2].candidate_claims[0]", "supported": true, "explanation": "Supported by the cited profile achievement.", "supporting_achievement_ids": ["a3"]}
+    ]
+  },
+  "validation": {
+    "passed": true,
+    "keyword_coverage_ratio": 1.0,
+    "matched_keywords": ["Data Platform Engineer", "data quality", "observability", "Python", "SQL", "Apache Spark", "AWS", "Airflow", "Terraform", "CI/CD", "Agile"],
+    "missing_keywords": [],
+    "metric_density": 0.8,
+    "groundedness_ratio": 1.0,
+    "ats_integrity_passed": true,
+    "issues": []
+  },
+  "model_settings": {
+    "model": "gpt-5.6",
+    "temperature": 0.2,
+    "max_correction_retries": 2,
+    "keyword_coverage_threshold": 0.65,
+    "metric_density_threshold": 0.6,
+    "groundedness_threshold": 1.0
+  },
+  "correction_attempts": 0
+}
