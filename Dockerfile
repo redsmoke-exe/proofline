@@ -4,7 +4,9 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PORT=10000 \
-    CV_AGENT_CACHE_DIR=/app/runtime/cache
+    CV_AGENT_CACHE_DIR=/app/runtime/cache \
+    CV_AGENT_RUNS_DIR=/app/output/runs \
+    CV_AGENT_EXAMPLES_DIR=/app/examples
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -22,6 +24,7 @@ WORKDIR /app
 
 COPY pyproject.toml requirements.txt README.md ./
 COPY src ./src
+COPY examples ./examples
 RUN python -m pip install --no-cache-dir . \
     && groupadd --system proofline \
     && useradd --system --gid proofline --home-dir /app proofline \

@@ -29,9 +29,13 @@ from .strategy import build_resume_strategy
 from .validation import PackageValidator, ProfileValidator
 
 
-REPOSITORY_ROOT = Path(__file__).resolve().parents[2]
-RUNS_ROOT = REPOSITORY_ROOT / "output" / "runs"
-EXAMPLES_ROOT = REPOSITORY_ROOT / "examples"
+APPLICATION_ROOT = Path(os.getenv("CV_AGENT_APP_ROOT", Path.cwd())).expanduser().resolve()
+RUNS_ROOT = Path(
+    os.getenv("CV_AGENT_RUNS_DIR", APPLICATION_ROOT / "output" / "runs")
+).expanduser().resolve()
+EXAMPLES_ROOT = Path(
+    os.getenv("CV_AGENT_EXAMPLES_DIR", APPLICATION_ROOT / "examples")
+).expanduser().resolve()
 ALLOWED_SUFFIXES = {".txt", ".md", ".pdf", ".docx"}
 MAX_FILE_BYTES = 10 * 1024 * 1024
 MAX_CV_FILES = 8
@@ -39,7 +43,7 @@ MAX_DOCUMENT_CHARS = 120_000
 RUN_ID_PATTERN = re.compile(r"^[a-f0-9]{32}$")
 PIPELINE_CONCURRENCY = asyncio.Semaphore(2)
 
-load_dotenv(REPOSITORY_ROOT / ".env")
+load_dotenv(APPLICATION_ROOT / ".env")
 configure_logging(os.getenv("LOG_LEVEL", "INFO"))
 LOGGER = logging.getLogger(__name__)
 

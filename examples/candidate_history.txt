@@ -1,0 +1,14 @@
+Alex Morgan
+
+Senior Data Platform Engineer | Northstar Analytics | Austin, TX | January 2022 - Present
+Reduced data pipeline latency by 42% by redesigning Apache Spark partitioning and Airflow orchestration.
+
+Data Engineer | Cedar Labs | Dallas, TX | June 2019 - December 2021
+Improved data quality pass rates from 91% to 98% by implementing SQL validation rules and ownership checks.
+Cut monthly AWS processing cost by 27% by tuning Python batch jobs and storage lifecycle policies.
+
+Education
+Bachelor of Science in Computer Science | University of Texas at Dallas | May 2019 | Richardson, TX
+
+Skills
+Python, SQL, Apache Spark, AWS, Airflow, Terraform, GitHub Actions, CI/CD, data quality, observability, Agile

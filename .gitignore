@@ -13,7 +13,5 @@ output/pdf/*
 output/cache/*
 output/runs/*
 
-# Deploy the Python API independently from the Sites frontend and local samples.
+# Deploy the Python API independently from the Sites frontend.
 /web/
-/examples/*
-!/examples/sample_snapshot.json
